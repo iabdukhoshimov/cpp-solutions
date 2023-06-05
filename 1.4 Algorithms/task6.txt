@@ -1,0 +1,13 @@
+Sorted or nearly sorted input:
+
+If the input array is already sorted or nearly sorted in ascending or descending order, and the first or last element is consistently chosen as the pivot, Quick Sort will encounter the worst-case time complexity.
+In this scenario, each partition created by the chosen pivot will have only one element less than the previous partition, resulting in n-1 recursive calls and a quadratic time complexity of O(n^2).
+Array with identical elements:
+
+When the input array contains many identical elements, and the chosen pivot is consistently equal to one of these elements, Quick Sort will repeatedly create highly imbalanced partitions.
+In this case, the algorithm will make n-1 recursive calls with partitions of size 0 and n-1, leading to a worst-case time complexity of O(n^2).
+Input with a poor pivot selection:
+
+In some cases, the pivot selection strategy itself can contribute to the worst-case time complexity.
+For example, if the pivot is always chosen as the first or last element, and the input array is already sorted or has a specific pattern, Quick Sort can encounter the worst-case time complexity.
+It's important to note that the worst-case time complexity of Quick Sort is relatively rare in practice. The average-case time complexity of Quick Sort is O(n log n), and it is one of the most efficient sorting algorithms on average. Additionally, randomized pivot selection techniques, such as choosing a random element as the pivot or shuffling the input array, can help mitigate the chances of encountering the worst-case time complexity and improve the algorithm's performance.

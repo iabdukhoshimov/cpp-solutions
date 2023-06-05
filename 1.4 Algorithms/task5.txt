@@ -1,0 +1,13 @@
+Merge Sort:
+
+Merge Sort has a space complexity of O(n) in the worst case.
+The additional space is required for creating temporary arrays during the merging phase of the algorithm.
+The size of the temporary arrays is proportional to the size of the input array.
+However, Merge Sort is not an in-place sorting algorithm, as it requires additional space for merging the subarrays.
+Quick Sort:
+
+Quick Sort has an average case space complexity of O(log n) and a worst case space complexity of O(n).
+Quick Sort is an in-place sorting algorithm that operates by partitioning the input array and sorting the partitions recursively.
+The space complexity arises due to the recursive function calls in the sorting process.
+In the average case, the recursion depth is logarithmic to the size of the input array, leading to a space complexity of O(log n).
+However, in the worst case, when the chosen 
